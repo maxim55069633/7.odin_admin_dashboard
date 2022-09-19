@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* My css code starts from here */
+
+body{
+
+    height:100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+h1,h2,h3{
+  font-weight: bold;
+}
+
+h2{
+  font-size: 25px;
+}
+
+/* left part */
+.left ul{
+    list-style: none;
+}
+
+.heading>svg{
+    height: 35px;
+    width: 35px;
+}
+li>svg{
+    height: 16px;
+    width: 16px;
+}
+
+.left{
+    grid-row: 1/-1;
+    
+    background-color: #701a75;
+    color: white;
+    font-size: 20px;
+
+
+    display: grid;
+    grid-template-rows: 2fr 6fr 3fr;
+    justify-content: space-evenly;
+}
+
+.left h1{
+  font-size: 30px;
+}
+
+.left .heading,
+.left li
+{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.heading>svg, li>svg{
+    justify-self: center;
+}
+
+/* top part */
+.top{
+  margin:10px;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.row1{
+  display: flex;
+  justify-content: end;  
+  align-items:center;
+  
+  gap:20px;
+
+}
+
+.avatar_small1 {
+  height: 40px;
+  width: 40px;
+  background-image:url("./images/halloween-pumpkin.svg");
+  background-color: #701a75;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.username{
+  font-weight: bold;
+}
+
+#search{
+  background-color: #f3e8ff;
+  border-radius: 9px;
+  border: none;
+  width:400px;
+  height: 40px;
+}
+
+#search{
+  margin-left: 30%;
+}
+
+.magnifier{
+  margin-right: auto;  
+}
+
+
+.avatar_large {
+  height: 60px;
+  width: 60px;
+  background-image:url("./images/halloween-pumpkin.svg");
+  background-color: #701a75;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.row2{
+  display:flex;
+  justify-content: end;
+  align-items: center;
+
+  gap:20px;
+}
+
+.greeting{
+  margin-right: auto;
+}
+
+.greeting ~button{
+  background-color: #701a75;
+  color: white;
+  border: none;
+
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.greeting>.username{
+  font-size: 20px;
+}
+
+/* bottom part */
+.bottom{
+  grid-row: 2/-1;
+  grid-column: 2/-1;
+  
+  background-color: #f3e8ff;
+  padding: 10px;
+  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+/* game repository */
+.repository{
+  grid-row: 1/-1;
+}
+
+
+.game_card{
+  background-color: white;
+  border: none;
+
+  width: 300px;
+  height: 200px;
+  padding: 0px 0px 10px 15px;
+  margin:10px;
+  border-radius: 10px;
+  box-shadow: 10px -5px 0px 0px #d946ef inset;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game_card>div{
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.games{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* announcements */
+.news{
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.news_item{
+  padding: 5px;
+}
+
+.horizontal_delimeter_line{
+  border: 1px solid #701a75;
+}
+
+/* trending */
+.avatar_small2 {
+  height: 40px;
+  width: 40px;
+  background-image:url("./images/strawman.jpg");
+  background-size:100% 100%;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.avatar_small3 {
+  height: 40px;
+  width: 40px;
+  background-image:url("./images/pandas.jpg");
+  background-size:100% 100%;
+  background-color: #701a75;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.talents{
+  border-radius: 15px;
+  background-color: white;
+  padding: 30px;
+  margin:15px;
+}
+
+.player{
+  margin:15px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
