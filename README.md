@@ -1,8 +1,13 @@
 # odin_admin_dashboard
 
+[Task Description](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)
+
 [Live preview](https://maxim55069633.github.io/7.odin_admin_dashboard/)
 
-This project aims to practice my grid skills intensively based on the given 2-dimension layout (Odin project sample). I also learn the following things:
+This project aims to practice my grid skills intensively based on the given 2-dimension layout (Odin project sample).
+
+I also learn the following things:
+
 1. Leverage online resource to improve development efficiency. E.g: Check color palettes from Tailwind. Download icons and svg images from Material Design Icons.
 2. Create a circle, put the user's avatar into it and resize.
 
